@@ -35,6 +35,11 @@
 .navegacion a:hover{
     color: black;
 }
+@media (max-width: 768px){
+    .navegacion a{
+        margin-top: 1rem;
+    }
+}
 
 .barra {
     display: flex;
@@ -62,7 +67,7 @@
 }
 
 .buscador button{
-    margin: 0 2rem 0 1rem;
+    margin: 0 .5rem 0 0.5rem;
 }
 
 .marcado{
@@ -70,6 +75,10 @@
 }
 .opcion{
     color: var(--negroClaro);
+}
+
+.campo{
+    min-width: 15rem;
 }
 
 .campo::placeholder{
@@ -80,6 +89,7 @@
     .campo{
         margin-left: 1rem;
         margin-top: 2rem;
+        min-width: 0%;
     }
     .buscador button{
         margin-top: 2rem; 
@@ -88,3 +98,32 @@
         margin-bottom: 1rem;
     }
 }
+
+.contenidoDerecha{
+    display: flex;
+    flex-direction: row;
+}
+.registro{
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.registro button{
+    margin: 0 .5rem 0 0;
+    min-width: 8rem;
+    background-color: var(--negroClaro);
+}
+@media (max-width: 768px){
+    .contenidoDerecha{
+        flex-direction: column;
+        align-items: center;
+    }
+    .registro{
+        margin: 1rem 0;
+    }
+    .registro button{
+        margin: .5rem .5rem;
+    }
+}
+

@@ -39,14 +39,30 @@ const Header = () => {
                     </nav>
                 </div>
 
-                <div className={styles.buscador}>
-                    <input
-                        type="search"
-                        placeholder="Producto"
-                        className={`form-control me-2 ${styles.campo}`}
-                    />
-                    <button type="button" className="btn btn-secondary">Buscar</button>
+                <div className={styles.contenidoDerecha}>
+                    <div className={styles.buscador}>
+                        <input
+                            type="search"
+                            placeholder="Producto"
+                            className={`form-control me-2 ${styles.campo}`}
+                        />
+                        <button type="button" className="btn btn-secondary">Buscar</button>
+                    </div>
+
+                    <div className={styles.registro}>
+                        <Link href="/inicio-sesion">
+                            <button type="button" className="btn btn-dark">Iniciar sesión</button>
+                        </Link>
+                        
+                        <Link href="/registro">
+                            <button type="button" className="btn btn-dark">Registrarse</button>  
+                        </Link>
+                        
+                    </div>
+
                 </div>
+
+
 
             </div>
 
