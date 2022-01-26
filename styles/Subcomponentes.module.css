@@ -1,0 +1,14 @@
+.contenido{
+    display: flex;
+    border-radius: 15px;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: var(--negroClaro);
+    background-color: white;
+    padding: 1rem 1rem 0 1rem;
+    margin: .5rem;
+    justify-content: space-between;
+}
+.contenido p{
+    margin-right: 2rem;
+}

@@ -1,0 +1,175 @@
+.centro{
+    max-width: 120rem;
+    margin: 4rem auto;
+    width: 75%;
+    border-radius: 15px;
+    box-shadow: rgba(0,0,0,0.6) 0 0 8px;
+    border-collapse: collapse;
+    align-items: center;
+}
+
+.base{
+    display: block;
+    border-radius: 15px;
+    background-color: var(--grisClaro);
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.base h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.separador{
+    height: 1px;
+    background-color: var(--negroClaro);
+    opacity: 70%;
+    margin: 2rem .5rem;
+}
+
+@media (max-width: 768px){
+    .centro{
+        margin: 2rem auto;
+        display: block;
+        width: 90%;
+    }
+    .base h1{
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
+
+
+
+.infoPrincipal{
+    display: grid;
+    grid-template-columns: repeat(3, 40% 30% 30%);
+    margin-bottom: 1rem;
+}
+.infoPrincipal div{
+    margin-right: .5rem;
+    margin-left: .5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px){
+    .infoPrincipal{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}
+    
+
+
+
+
+.categoriaYBarras{
+    display: grid;
+    grid-template-columns: repeat(2, 60% 40%);
+    margin-bottom: 1rem;
+}
+
+.infoCategoria{
+    display: grid;
+    grid-template-columns: repeat(2, 50% 50%);
+}
+.infoCategoria div{
+    margin-right: .5rem;
+    margin-left: .5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.barra{
+    margin-right: .5rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px){
+    .categoriaYBarras{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0rem;
+    }
+}
+
+.areaTexto{
+    margin-right: .5rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.ingredientes{
+    margin: 2rem .5rem;
+}
+
+
+.trazas{
+    margin: 2rem .5rem;
+}
+
+.contiene{
+    margin: 2rem .5rem;
+}
+
+.checks{
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.checkIndividual{
+    margin-bottom: .5rem;
+}
+
+@media( min-width: 768px){
+    .checks{
+        display: grid;
+        grid-template-columns: repeat(2, 50% 50%);
+    } 
+}
+
+.fuente{
+    margin-right: .5rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+}
+
+.btnAgregar{
+   margin: 2rem .5rem;
+}
+
+.btnAgregar button{
+    font-size: 1.5rem;
+ }
+
+
+
+.contenIngredientes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenTrazas{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 ,5rem;
+}
+
+.contenContiene{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 ,5rem;
+}

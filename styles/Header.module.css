@@ -1,0 +1,90 @@
+.header {
+    background-size: cover;
+    background-color: var(--grisClaro);
+    padding: 2rem 0;
+}
+
+@media (min-width: 768px){
+    .espaciado{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .navegacion{
+        flex-direction: row;
+    }
+}
+
+.navegacion a{
+    margin: .5rem;
+    font-size: 1.2rem;
+    margin: 0 1.5rem;
+    text-align: center;
+
+    transition: color;
+    transition-duration: .1s;
+}
+.navegacion a:hover{
+    color: black;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:768px){
+    .barra{
+        flex-direction: row;
+    }
+}
+
+.logo{
+    display: flex;
+    margin-left: 1rem;
+}
+.logo h3{
+    color: var(--negroClaro);
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+.buscador{
+    display: flex;
+}
+
+.buscador button{
+    margin: 0 2rem 0 1rem;
+}
+
+.marcado{
+    color: black;
+}
+.opcion{
+    color: var(--negroClaro);
+}
+
+.campo::placeholder{
+    opacity: 60%;
+}
+
+@media (max-width: 768px){
+    .campo{
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    .buscador button{
+        margin-top: 2rem; 
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+}
